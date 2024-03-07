@@ -9,7 +9,6 @@ export const Loading = () => {
         className="animate-pulse duration-700"
         src="/logo.svg"
         alt="logo"
-        srcset=""
       />
     </div>
   );
