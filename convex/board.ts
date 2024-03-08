@@ -1,5 +1,9 @@
+///API endpoint for CRED operations on board
+
 import { mutation } from "./_generated/server";
 import { v } from "convex/values";
+
+///Random images will be picked out of this array
 const images = [
   "/placeholders/1.svg",
   "/placeholders/2.svg",
@@ -26,8 +30,6 @@ export const create = mutation({
     }
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
-
-    console.log(randomImage, "TEST");
     const authorName = identity.name || "Unknown";
 
     const board = await ctx.db.insert("boards", {

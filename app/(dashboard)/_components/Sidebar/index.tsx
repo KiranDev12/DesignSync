@@ -1,3 +1,4 @@
+///Main sidebar file
 import { List } from "./list"
 import { NewButton } from "./new-button"
 function Sidebar() {

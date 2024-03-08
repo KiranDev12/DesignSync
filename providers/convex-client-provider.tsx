@@ -11,14 +11,20 @@ interface ConvexClientProviderProps {
 const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL!;
 
 const convex = new ConvexReactClient(convexUrl);
+{
+  /*convex client is initialized*/
+}
 
 export const ConvexClientProvider = ({
   children,
 }: ConvexClientProviderProps) => {
   return (
     <ClerkProvider>
+      {/* sets up clerk*/}
       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
-        <Authenticated>{children}</Authenticated>
+        {/* sets up convex with clerk */}
+        <Authenticated>{children}</Authenticated>{" "}
+        {/*Renders the children only after auth*/}
         <AuthLoading>
           <Loading />
         </AuthLoading>

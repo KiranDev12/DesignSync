@@ -1,3 +1,4 @@
+///Empty state when there are no output for the searched keyword
 import Image from "next/image";
 
 export const EmptySearch = () => {

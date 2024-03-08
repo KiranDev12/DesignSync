@@ -1,3 +1,4 @@
+///Primary empty state when there are no boards
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -9,11 +10,12 @@ import { useApiMutation } from "@/hooks/use-api-mutation";
 import { toast } from "sonner";
 export const EmptyBoards = () => {
   const { organization } = useOrganization();
-  const { mutate, pending } = useApiMutation(api.board.create);
+  const { mutate, pending } = useApiMutation(api.board.create); ///custom hook useApiMutation for disabling the button for splitseconds
   const onClick = () => {
     if (!organization) {
       return;
     }
+    //calling the api endpoint function
     mutate({
       orgId: organization.id,
       title: "Untitled",

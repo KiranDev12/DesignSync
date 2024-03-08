@@ -1,3 +1,4 @@
+///Primary empty state when there are no orgs
 import Image from "next/image";
 import { CreateOrganization } from "@clerk/nextjs";
 

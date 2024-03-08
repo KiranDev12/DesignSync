@@ -1,5 +1,5 @@
+///Navbar with Profile setting, invite settings and search bar
 "use client";
-
 import {
   OrganizationSwitcher,
   UserButton,
@@ -36,8 +36,9 @@ export const Navbar = () => {
                 backgroundColor: "white",
               },
             },
-          }}
+          }} 
         />
+        {/* modified organization switcher  */}
       </div>
       {organization && <InviteButton />}
 

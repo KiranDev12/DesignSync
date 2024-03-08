@@ -1,4 +1,4 @@
-import Image from "next/image";
+///On reload loading screen of logo
 
 export const Loading = () => {
   return (

@@ -1,3 +1,5 @@
+///Empty state when there are no favorite boards
+
 import Image from "next/image";
 
 export const EmptyFavourites = () => {

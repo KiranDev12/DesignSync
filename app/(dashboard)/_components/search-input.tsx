@@ -1,3 +1,4 @@
+/// Search bar which adds to the params the search
 "use client";
 import qs from "query-string";
 import { Search } from "lucide-react";

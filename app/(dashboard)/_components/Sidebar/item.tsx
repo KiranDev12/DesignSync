@@ -1,3 +1,4 @@
+///Each organization in the side bar
 "use client";
 
 import Image from "next/image";
@@ -12,7 +13,7 @@ interface ItemProps {
   imageUrl: string;
 }
 
-import { Hint } from "@/components/ui/hint";
+import { Hint } from "@/components/ui/hint"; ///on hover name of full organization
 
 export const Item = ({ id, name, imageUrl }: ItemProps) => {
   const { organization } = useOrganization();

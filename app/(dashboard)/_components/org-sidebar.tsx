@@ -1,3 +1,4 @@
+///Complete org control for creation, deletion and managing organizations
 "use client";
 
 import Link from "next/link";
@@ -70,6 +71,7 @@ export const OrgSidebar = () => {
               query: { favorites: true },
             }}
           >
+            {/* redirects to route: http://localhost:3000/?favorites=true */}
             <Star className="h-4 w-4 mr-2" />
             Favorite Boards
           </Link>

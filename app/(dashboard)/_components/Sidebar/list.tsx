@@ -1,3 +1,4 @@
+///List the organizations under a user
 "use client";
 
 import { useOrganizationList } from "@clerk/nextjs";
