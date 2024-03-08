@@ -8,6 +8,12 @@ export const NewButton = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
+        {/* Using asChild in DialogTrigger allows you to customize the trigger
+        element more freely. When you use asChild, the element inside
+        DialogTrigger becomes the child of the trigger, rather than the trigger
+        itself being replaced by that element. This gives you more flexibility
+        in styling and adding additional elements around the trigger. */}
+
         <div className="aspect-square">
           <Hint
             label="Create Organization"
